@@ -1,7 +1,6 @@
 package com.fmt.app.security.controllers.dto.request.note;
 
 import com.fmt.app.security.entities.Note;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 public record UpdateNoteRequest(@NotNull Long id, String titulo, String conteudo) {

@@ -15,7 +15,7 @@ public class UserController {
     private final UserService service;
 
     @PostMapping("cadastrar")
-    public ResponseEntity<String> cadastrar(@RequestBody InsertUserRequest insertUserRequest) throws Exception {
+    public ResponseEntity<String> cadastrar(@RequestBody InsertUserRequest insertUserRequest) {
         service.create(insertUserRequest.toEntity());
         return new ResponseEntity<>("Usuário Criado com Sucesso!", HttpStatus.CREATED);
     }

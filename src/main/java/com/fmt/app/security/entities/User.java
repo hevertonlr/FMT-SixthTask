@@ -1,7 +1,6 @@
 package com.fmt.app.security.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fmt.app.security.controllers.dto.request.LoginRequest;
 import jakarta.persistence.*;
 import lombok.Data;
